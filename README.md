@@ -1,5 +1,5 @@
 # woodlands
 Site css
-The two files are almost identical. The main difference lies in the background image. The css from the textarea gives the full url whereas the css that is uploaded is in the same place as the background image so there is no need for a long path. Maybe could try and leave the long path so that I only need one document.
+Included in this repository are documents from the Woodlands Swim Team site from the uploaded files section, the invitational page and the help page. Also the site logo.
 
-Also included are the other files from the file upload part of the site.
+When making a change to the site css it is advisable to copy the contents of the css file into the textarea in the advanced site settings. Once you are happy with the changes, copy them into the main css page, remove the old main css page, upload the new css page, then remove the css from the textarea in the advanced site settings.
