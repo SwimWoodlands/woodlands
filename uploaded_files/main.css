@@ -242,9 +242,3 @@ top: 100%;
 div.logo, #header h1, #header h2{
 	display:none;
 }
-
-#wrapper #header .hgroup{
-	overflow: hidden;
-	height: 120px;
-	background: url("https://swimtopia.s3.amazonaws.com/77/files/Woodlands_LOGO_2015_-_G_B_on_White_537x120.jpg?1461861472") no-repeat;
-}
