@@ -1,0 +1,8 @@
+#googleSearch{
+ width:39%;
+float:right;
+}
+
+.gsc-control-cse, .gsc-contrl-cse-en{
+	background-color: transparent;
+}
