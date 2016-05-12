@@ -3,6 +3,14 @@
 float:right;
 }
 
-.gsc-control-cse, .gsc-contrl-cse-en{
+#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en{
+	border:none;
+}
+
+#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en, #googleSearch .gsc-search-box, #googleSearch .gsc-search-box-tools{
 	background-color: transparent;
+}
+
+div.logo, .hgroup h1, .hgroup h2{
+	display:none;
 }
