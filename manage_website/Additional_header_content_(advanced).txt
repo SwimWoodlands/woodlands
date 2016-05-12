@@ -1,0 +1,13 @@
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link href="https://swimtopia.s3.amazonaws.com/77/files/main.css?1460067429" media="screen" rel="stylesheet" type="text/css" />
+<link href="https://swimtopia.s3.amazonaws.com/77/files/print.css?1461609176" media="print" rel="stylesheet" type="text/css" />
+<script>
+ window.onload = function(){
+ var logo_array = document.getElementsByClassName('logo');
+ 	var logo_img = logo_array[0].childNodes[1].childNodes[0];
+ 	logo_img.src = "https://swimtopia.s3.amazonaws.com/77/files/Woodlands_LOGO_2015_-_G_B_on_White_537x120.jpg?1461861472";
+ 	logo_img.width = 537;
+ 	logo_img.height = 120;
+  	logo_array[0].style.display = "block";
+  };
+</script>
