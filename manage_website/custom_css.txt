@@ -14,3 +14,15 @@ float:right;
 div.logo, .hgroup h1, .hgroup h2{
 	display:none;
 }
+
+.display_linked_images{
+  list-style: none;
+}
+
+.display_linked_images li{
+  display:inline;
+}
+
+#wrapper #container #content h5 {
+  color: #0a6531;
+}
