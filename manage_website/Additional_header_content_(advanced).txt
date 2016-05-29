@@ -2,6 +2,8 @@
 <link href="https://swimtopia.s3.amazonaws.com/77/files/main.css?1460067429" media="screen" rel="stylesheet" type="text/css" />
 <link href="https://swimtopia.s3.amazonaws.com/77/files/print.css?1461609176" media="print" rel="stylesheet" type="text/css" />
 <script>
+/*Adding lang = en using js, figured it was better than nothing*/
+document.getElementsByTagName("html")[0].setAttribute("lang", "en");
  window.onload = function(){
  var logo_array = document.getElementsByClassName('logo');
  	var logo_img = logo_array[0].childNodes[1].childNodes[0];
