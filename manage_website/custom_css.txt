@@ -26,3 +26,15 @@ div.logo, .hgroup h1, .hgroup h2{
 #wrapper #container #content h5 {
   color: #0a6531;
 }
+.tertiary li{
+	display: inline;
+       margin-right:20px;
+}
+#wrapper #container #content .tertiary ul li.active a{
+	color:#000000;
+}
+
+#wrapper #container #content .tertiary ul li .divider{
+  margin-left:20px;
+color: lightgrey;
+}
