@@ -11,10 +11,13 @@ float:right;
 	background-color: transparent;
 }
 
-div.logo, #header h1, #header h2{
+div.logo{
 	display:none;
 }
 
-div.logo, .hgroup h1, .hgroup h2{
-	display:none;
-}
+.hgroup h1, .hgroup h2{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
