@@ -1,3 +1,16 @@
+#googleSearch{
+ width:39%;
+float:right;
+}
+
+#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en{
+	border:none;
+}
+
+#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en, #googleSearch .gsc-search-box, #googleSearch .gsc-search-box-tools{
+	background-color: transparent;
+}
+
 div.logo, #header h1, #header h2{
 	display:none;
 }
