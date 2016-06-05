@@ -52,8 +52,5 @@ function addEventListenersToDirectoryLinks(){
 	document.getElementById("anchorM_R").addEventListener("click", function(){ showDirectoryPanel("M_R") });
 	document.getElementById("anchorS_V").addEventListener("click", function(){ showDirectoryPanel("S_V") });
 	document.getElementById("anchorW_Z").addEventListener("click", function(){ showDirectoryPanel("W_Z") });
-	/*for(i=0; i<arrayOfPanels.length; i++){
-		document.getElementById("anchor" + arrayOfPanels[i]).addEventListener("click", function(){ showDirectoryPanel(arrayOfPanels[i]) });
-	}*/
 }
 </script>
