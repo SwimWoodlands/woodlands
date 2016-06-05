@@ -1,40 +1,7 @@
-#googleSearch{
- width:39%;
-float:right;
-}
-
-#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en{
-	border:none;
-}
-
-#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en, #googleSearch .gsc-search-box, #googleSearch .gsc-search-box-tools{
-	background-color: transparent;
+div.logo, #header h1, #header h2{
+	display:none;
 }
 
 div.logo, .hgroup h1, .hgroup h2{
 	display:none;
-}
-
-.display_linked_images{
-  list-style: none;
-}
-
-.display_linked_images li{
-  display:inline;
-}
-
-#wrapper #container #content h5 {
-  color: #0a6531;
-}
-.tertiary li{
-	display: inline;
-       margin-right:20px;
-}
-#wrapper #container #content .tertiary ul li.active a{
-	color:#000000;
-}
-
-#wrapper #container #content .tertiary ul li .divider{
-  margin-left:20px;
-color: lightgrey;
 }
