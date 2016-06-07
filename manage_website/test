@@ -213,7 +213,7 @@
 <table class="pool_records_table">
 <tbody>
 <tr>
-	<th colspan="2">
+	<th colspan="2" id="conference_meet" scope="col">
 		<p class="tooltip">
 			League Conference Championship Meet (Big Meet) 
 			<img src="https://swimtopia.s3.amazonaws.com/77/files/Information_green.png?1461558297" alt="More information">
@@ -222,77 +222,77 @@
 	</th>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_date_of_meet">
 		Date of Meet
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_date_of_meet">
 		<time datetime="2016-07-30">Saturday, July 30</time> and <time datetime="2016-07-31">Sunday, July 31, 2016</time>
 	</td>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_sign_out_deadline">
 		Sign Out Deadline
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_sign_out_deadline">
 		<time datetime="2016-07-16">Saturday, July 16th</time> (by Indian Valley Meet)
 	</td>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_sign_out_link">
 		Sign Out Link
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_sign_out_link">
 		<a href="https://woodlands.swimtopia.com/swim_meets/41469/swim_meet_entries">Sign out here</a>. Only signing out for <time datetime="P1D">1 day</time>, contact <a href="mailto:swimwoodlands@gmail.com">Coach Sean</a>.
 	</td>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_location">
 		Location
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_location">
 		<p>
 			Clarke Swim Center (Heather Farm Pool)
 		</p>
 	</td>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_parking">
 		Parking
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_parking">
 		<p>
 			Parking available in streets (gets very busy, plan accordingly) &nbsp;
 		</p>
 	</td>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_set_up">
 		Set Up
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_set_up">
 		Set up is Friday night prior to meet (more information to follow)
 	</td>
 </tr>
 <tr>
-	<th class="r">
+	<th class="r" id="conference_meet_order_of_events">
 		Order of Events
 	</th>
-	<td>
+	<td headers="conference_meet conference_meet_order_of_events">
 		<table>
 		<tbody>
 		<tr>
-			<th class="r">
+			<th class="r" id="conference_meet_saturday">
 				Saturday
 			</th>
-			<td>
+			<td headers="conference_meet_saturday">
 				IM (11 and up), Free, Breast and Medley Relay
 			</td>
 		</tr>
 		<tr>
-			<th class="r">
+			<th class="r" id="conference_meet_sunday">
 				Sunday
 			</th>
-			<td>
+			<td headers="conference_meet_sunday">
 				IM (7-10), Back, Fly and Free Relay
 			</td>
 		</tr>
