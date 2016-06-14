@@ -2,3 +2,12 @@
 .contextual_editing_controls{
 	display:none;
 }
+
+td p, th p{
+ margin:0;
+padding:0;
+}
+
+td, th{
+	vertical-align:text-top;
+}
