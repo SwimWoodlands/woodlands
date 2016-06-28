@@ -11,10 +11,7 @@ float:right;
 	background-color: transparent;
 }
 
-div.logo{
-	display:none;
-}
-
+/*From http://webaim.org/techniques/css/invisiblecontent/*/
 .hgroup h1, .hgroup h2{position:absolute;
 left:-10000px;
 top:auto;
