@@ -5,13 +5,18 @@
  window.onload = function(){
  	var imageObj = new Image();
 	imageObj.onload = function(){
+		$(".logo").fadeOut(3000, swapImage);
+	}
+	
+	function swapImage(){
 		var logo_array = document.getElementsByClassName('logo');
  		var logo_img = logo_array[0].childNodes[1].childNodes[0];
- 		logo_img.src = "https://swimtopia.s3.amazonaws.com/77/files/Woodlands_LOGO_2015_-_G_B_on_White_537x120.jpg?1461861472";
- 		logo_img.width = 537;
+		logo_img.src = "https://swimtopia.s3.amazonaws.com/77/files/Woodlands_LOGO_2015_-_G_B_on_White_537x120.jpg?1461861472";
+		logo_img.width = 537;
  		logo_img.height = 120;
-  		logo_array[0].style.display = "block";
+		$(".logo").fadeIn(3000);
 	}
+	
 	// Calls the imageObj.onload function asynchronously
 	imageObj.src =  "https://swimtopia.s3.amazonaws.com/77/files/Woodlands_LOGO_2015_-_G_B_on_White_537x120.jpg?1461861472";
 
