@@ -1,6 +1,5 @@
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link href="https://swimtopia.s3.amazonaws.com/77/files/main.css?1460067429" media="screen" rel="stylesheet" type="text/css" />
-<link href="https://swimtopia.s3.amazonaws.com/77/files/print.css?1461609176" media="print" rel="stylesheet" type="text/css" />
 <script>
  window.onload = function(){
  	var imageObj = new Image();
