@@ -1,20 +1,8 @@
-#googleSearch{
- width:39%;
-float:right;
+.tq_width{
+	width:75%;
 }
-
-#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en{
-	border:none;
+#googleSearch{width:39%;float:right}#googleSearch .gsc-control-cse,#googleSearch .gsc-control-cse-en{border:none}#googleSearch .gsc-control-cse,#googleSearch .gsc-control-cse-en,#googleSearch .gsc-search-box,#googleSearch .gsc-search-box-tools{background-color:transparent}.hgroup h1,.hgroup h2{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.extra_margin{
+	margin-top:10px;
+	margin-bottom:10px;
 }
-
-#googleSearch .gsc-control-cse, #googleSearch .gsc-control-cse-en, #googleSearch .gsc-search-box, #googleSearch .gsc-search-box-tools{
-	background-color: transparent;
-}
-
-/*From http://webaim.org/techniques/css/invisiblecontent/*/
-.hgroup h1, .hgroup h2{position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;}
