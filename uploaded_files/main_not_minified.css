@@ -275,3 +275,7 @@ float:right;
   margin-left:20px;
 color: lightgrey;
 }
+
+.half_width{
+	width:50%;
+}
