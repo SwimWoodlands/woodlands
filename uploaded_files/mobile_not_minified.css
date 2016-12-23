@@ -114,3 +114,7 @@
 	}
 	
 	.email_cell{word-break: break-all;}
+	
+	#footer{
+		background-color:#CCCCCC;
+	}
