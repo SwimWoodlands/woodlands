@@ -66,31 +66,41 @@ window.onload = function(){
 	/*hide sections in the directory*/
 	if(isPage("/directory")){
 		/*Hide all the section panels except the first one*/
-		if(editModePage==false){showDirectoryPanel("A_C");}
+		if(editModePage==false){
+			showDirectoryPanelNew(document.getElementById(arrayOfPanelsNew[0][1]), arrayOfPanelsNew);
+		}
 		/* Add event listeners to the links in the directory section*/
-		if(editModePage==false){addEventListenersToDirectoryLinks();}}};
-		var arrayOfPanels=["A_C", "D_G", "H_L", "M_R", "S_V", "W_Z"];
+		if(editModePage==false){
+			addEventListenersToDirectoryLinksNew(arrayOfPanelsNew);
+		}
+	}
+};
+
+var arrayOfPanelsNew=[["A_C", "anchor-A_C"], ["D_G","anchor-D_G"], ["H_L","anchor-H_L"], ["M_R","anchor-M_R"], ["S_V","anchor-S_V"], ["W_Z","anchor-W_Z"]];
 
 /* function to show and hide directory sections */
-function showDirectoryPanel(panelToShow){
-	for(i=0; i<arrayOfPanels.length; i++){
-		document.getElementById(arrayOfPanels[i]).style.display = "none";
-document.getElementById(arrayOfPanels[i]).parentElement.parentElement.parentElement.style.display = "none";
-document.getElementById("anchor"+arrayOfPanels[i]).parentElement.className = "";
-	}	
-document.getElementById(panelToShow).style.display = "block";
-document.getElementById(panelToShow).parentElement.parentElement.parentElement.style.display = "block";
-document.getElementById("anchor"+panelToShow).parentElement.className = "active";
+function showDirectoryPanelNew(panelToShow, panelArray){
+	for(var i=0; i<panelArray.length; i++){
+		document.getElementById(panelArray[i][0]).parentElement.parentElement.parentElement.style.display="none";
+		document.getElementById(panelArray[i][1]).parentElement.className="";
+	}
+	document.getElementById((panelToShow.id.split("-"))[1]).parentElement.parentElement.parentElement.style.display="block";
+	panelToShow.parentElement.className="active";
 }
 
 /* Function to add event handlers onto the directory links*/
-function addEventListenersToDirectoryLinks(){
-	document.getElementById("anchorA_C").addEventListener("click", function(){ showDirectoryPanel("A_C") });
-	document.getElementById("anchorD_G").addEventListener("click", function(){ showDirectoryPanel("D_G") });
-	document.getElementById("anchorH_L").addEventListener("click", function(){ showDirectoryPanel("H_L") });
-	document.getElementById("anchorM_R").addEventListener("click", function(){ showDirectoryPanel("M_R") });
-	document.getElementById("anchorS_V").addEventListener("click", function(){ showDirectoryPanel("S_V") });
-	document.getElementById("anchorW_Z").addEventListener("click", function(){ showDirectoryPanel("W_Z") });
+function addEventListenersToDirectoryLinksNew(panelArray){
+	var dirSec;
+	for(var i=0; i<panelArray.length; i++){
+		dirSec=document.getElementById(panelArray[i][1]);
+		if (typeof window.addEventListener==='function'){
+			(function(_dirSec){
+				dirSec.addEventListener('click', function(){
+					showDirectoryPanelNew(_dirSec, arrayOfPanelsNew);
+				});
+			})(dirSec);
+		}
+	}
 }
 
 /* From http://stackoverflow.com/questions/11381673/detecting-a-mobile-browser */
