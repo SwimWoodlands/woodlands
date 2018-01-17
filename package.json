@@ -1,0 +1,36 @@
+{
+  "name": "woodlands",
+  "version": "1.0.0",
+  "description": "Woodlands version control for custom features added to Swimtopia website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwimWoodlands/woodlands.git"
+  },
+  "keywords": [
+    "Swim",
+    "Woodlands"
+  ],
+  "author": "Mike Mansell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwimWoodlands/woodlands/issues"
+  },
+  "homepage": "https://github.com/SwimWoodlands/woodlands#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifyes": "^0.1.3",
+    "gulp-wrap": "^0.13.0",
+    "jshint": "^2.9.5"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,47 @@
+/* start nav3 definitions ot support tertiary navigation */
+.nav3menu {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.nav3menu .item {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+/*  display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.nav3menu .item.selected {
+    background-color: #1B5E20; /* Dark Green */
+}
+
+.nav3section {
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+    display: block;
+}
+
+.nav3section.hide {
+    display: none;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .nav3menu, .nav3section {
+        width: 100%;
+    }
+}
+/* start nav3 definitions ot support tertiary navigation */
+
