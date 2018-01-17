@@ -1,0 +1,44 @@
+/* start nav3 definitions ot support tertiary navigation */
+
+.nav3menu {
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 20%;
+  .item {
+    background-color: $primary-color;
+    border: none;
+    border-radius: 8px;
+    color: $primary-color-text;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    /*  display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    &.selected {
+      background-color: $primary-color-dark;
+    }
+  }
+}
+
+.nav3section {
+  float: right;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 80%;
+  display: block;
+  &.hide {
+    display: none;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .nav3menu, .nav3section {
+    width: 100%;
+  }
+}
+

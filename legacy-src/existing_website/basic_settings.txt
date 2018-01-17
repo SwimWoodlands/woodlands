@@ -1,0 +1,5 @@
+Site Title: WOODLANDS
+Subtitle: Home of Woodlands Swim Team and Woodlands Cabana Club
+logo: https://swimtopia.s3.amazonaws.com/77/logos/medium/Official_LOGO_2015_copy.jpg?1452205244
+primary color: #1B5E20
+secondary color: #4CAF50

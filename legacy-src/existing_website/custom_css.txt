@@ -1,0 +1,52 @@
+.tq_width{
+	width:75%;
+}
+#googleSearch{width:39%;float:right}#googleSearch .gsc-control-cse,#googleSearch .gsc-control-cse-en{border:none}#googleSearch .gsc-control-cse,#googleSearch .gsc-control-cse-en,#googleSearch .gsc-search-box,#googleSearch .gsc-search-box-tools{background-color:transparent}.hgroup h1,.hgroup h2{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.extra_margin{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+/* start nav3 definitions to support tertiary navigation */
+.nav3menu {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 20%;
+}
+.nav3menu .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+/*  display: inline-block; */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.nav3menu .button.selected {
+    background-color: #1B5E20; /* Dark Green */
+}
+.nav3section {
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 80%;
+}
+.nav3section.show {
+    display: block;
+}
+.nav3section.hide {
+    display: none;
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .nav3menu, .nav3section {
+        width: 100%;
+    }
+}
+/* end nav3 definitions to support tertiary navigation */
+

@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglifyes');
 let htmlmin = require('gulp-htmlmin');
 var cssnano = require('gulp-cssnano');
+var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var del = require('del');
 var wrap = require('gulp-wrap');
@@ -22,14 +23,24 @@ gulp.task('lint', function() {
         .pipe(jshint.reporter('default'));
 });
 
-gulp.task('css', function(){
-    return gulp.src('src/**/*.css')
+// Generate css from scss 
+gulp.task('sass', function() {
+  return gulp.src("src/**/*.scss")
+    .pipe(concat('merged.scss'))
+    .pipe(gulp.dest("build/scss"))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(rename('merged.scss.css'))
+    .pipe(gulp.dest("build/css"));
+});
+
+gulp.task('css', gulp.series('sass', function(){
+    return gulp.src(['src/**/*.css','build/css/*.css'])
 	.pipe(concat('woodlands.css'))
 	.pipe(gulp.dest('build'))
         .pipe(rename('woodlands.min.css'))
 	.pipe(cssnano())
         .pipe(gulp.dest('build'));
-});
+}));
 
 // Concatenate & Minify JS
 gulp.task('js', function() {
@@ -53,18 +64,18 @@ gulp.task('tag-css', gulp.series('css', function() {
     return gulp.src('build/woodlands.min.css')
 	.pipe(wrap('<style><%= contents %></style>'))
 	.pipe(rename('woodlands.min.css.tag'))
-	.pipe(gulp.dest('build'));	
+	.pipe(gulp.dest('build/tag'));	
 }));
 
 gulp.task('tag-js', gulp.series('js', function() {
     return gulp.src('build/woodlands.min.js')
         .pipe(wrap('<script><%= contents %></script>')) 
         .pipe(rename('woodlands.min.js.tag'))
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('build/tag'));
 }));
 
 gulp.task('header', gulp.series('tag-css','tag-js', function() {
-    return gulp.src('build/woodlands.min.*.tag')
+    return gulp.src('build/tag/*.tag')
 	.pipe(concat('Additional_Header_Content.txt'))
 	.pipe(gulp.dest('dist'));
 
@@ -73,7 +84,7 @@ gulp.task('header', gulp.series('tag-css','tag-js', function() {
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch('src/**/*.js', gulp.series('lint', 'scripts'));
-    gulp.watch('src/**/*.css', gulp.series('css'));
+    gulp.watch(['src/**/*.css','src/**/*.scss'], gulp.series('css'));
     gulp.watch('src/**/*.html', gulp.series('html'));
 });
 

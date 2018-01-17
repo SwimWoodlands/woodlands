@@ -1,0 +1,301 @@
+#wrapper {
+  #container {
+    #secondary_navigation ul li a, h1, h2, h3, h4 {
+      color: #0a6531;
+    }
+  }
+  #header #top_nav_bar #manage_menu {
+    #sub ul li {
+      color: #0a6531;
+      a {
+        color: #0a6531;
+      }
+    }
+    li.active {
+      color: #0a6531;
+    }
+  }
+  #navigation ul li.active {
+    a, ul a {
+      color: #0a6531;
+    }
+  }
+}
+
+body {
+  background-color: #ccc;
+  background-image: url(//swimtopia.s3.amazonaws.com/77/files/water_bg.png?1361593264);
+  background-attachment: fixed;
+}
+
+#wrapper {
+  #header {
+    #top_nav_bar {
+      background-color: #0a6531;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    #top_nav_bar {
+      a {
+        color: #fff;
+      }
+      #manage_menu {
+        &.active {
+          background-color: #fff;
+          color: #0a6531;
+        }
+        &.background {
+          background-color: #fff;
+        }
+        #sub ul li {
+          &:hover {
+            color: #fff;
+            background-color: #0a6531;
+          }
+          &.spacer {
+            background-color: #0a6531;
+          }
+        }
+      }
+    }
+  }
+  #navigation {
+    background-color: #0a6531;
+    ul li {
+      a {
+        color: #fff;
+        &:hover {
+          color: #9af6c9;
+        }
+      }
+      ul {
+        background: #1fc466;
+        li {
+          border-top: 1px solid #0a6531;
+        }
+      }
+    }
+  }
+  #container {
+    #content a, a {
+      color: #43b02a;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    #content a:hover, a:hover {
+      color: #1e630e;
+      text-decoration: underline;
+    }
+    #secondary_navigation ul li a:hover {
+      color: #c7c7c7;
+    }
+  }
+  #footer ul li a {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+  #container {
+    .snippet {
+      &.narrow .wrapper .snippet_top {
+        background-color: #0a6531;
+        .link {
+          background-color: #222;
+        }
+      }
+      &.twitter_profile a {
+        color: #0a6531 !important;
+      }
+      &.announcement_snippet.normal {
+        background-image: none;
+        background-color: #fff;
+      }
+    }
+    a.button, input.button {
+      background-color: #222;
+      color: #fff;
+    }
+    .subnav strong {
+      a {
+        background-color: #1fc466;
+        color: #fff;
+      }
+      &.active {
+        a, &.completed a {
+          background-color: #222;
+          color: #fff;
+        }
+      }
+      &.completed a {
+        background-color: #0a6531;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.required_desc {
+  background-color: #ccc;
+}
+
+table {
+  thead tr th {
+    background: #0a6531;
+  }
+  tbody tr:hover {
+    background: inherit;
+  }
+  .hint {
+    color: #ccc;
+  }
+}
+
+.entry tr {
+  border-bottom: 1px solid #ccc;
+}
+
+#wrapper #container #content .pool_records_table {
+  border: 1px solid #000;
+  td, th {
+    border: 1px solid #000;
+  }
+}
+
+.qTimesTbl {
+  border: 1px solid #000;
+  td, th {
+    border: 1px solid #000;
+  }
+}
+
+#wrapper #container #content .pool_records_table {
+  th {
+    background-color: #0a6531;
+    color: #FFF;
+    vertical-align: top;
+  }
+  td {
+    font-size: .8em;
+  }
+}
+
+.qTimesTbl2 td {
+  font-size: .8em;
+}
+
+#wrapper #container #content .pool_records_table tr:hover {
+  background-color: #BFFED6;
+}
+
+#tableLeft {
+  float: left;
+  width: 45%;
+}
+
+#tableRight {
+  float: right;
+  width: 45%;
+}
+
+.qTimesTbl {
+  th {
+    background-color: #afd898;
+    vertical-align: top;
+    &.heading {
+      background-color: #fff;
+    }
+  }
+  tr:hover {
+    background-color: #dfffcd;
+  }
+}
+
+.r {
+  text-align: right;
+}
+
+th {
+  padding: .4em;
+}
+
+td p, th p {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper #container {
+  #content .pool_records_table td.header {
+    font-size: 1em;
+    background-color: #0a6531;
+    color: #FFF;
+    font-weight: 700;
+  }
+  #secondary_navigation ul li li.active a {
+    color: #000;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.display_linked_images li, .tertiary li {
+  display: inline;
+}
+
+.tooltip {
+  .tooltiptext {
+    visibility: hidden;
+    width: 310px;
+    top: 100%;
+    left: 50%;
+    margin-left: -155px;
+    background-color: #000;
+    text-align: left;
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+  }
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}
+
+#googleSearch {
+  width: 39%;
+  float: right;
+  .gsc-control-cse, .gsc-control-cse-en {
+    border: none;
+  }
+  .gsc-control-cse, .gsc-control-cse-en, .gsc-search-box, .gsc-search-box-tools {
+    background-color: transparent;
+  }
+}
+
+.display_linked_images {
+  list-style: none;
+}
+
+#wrapper #container #content h5 {
+  color: #0a6531;
+}
+
+.tertiary li {
+  margin-right: 20px;
+}
+
+#wrapper #container #content .tertiary ul li {
+  &.active a {
+    color: #000;
+  }
+  .divider {
+    margin-left: 20px;
+    color: #d3d3d3;
+  }
+}
+
