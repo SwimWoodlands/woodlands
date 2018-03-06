@@ -37,9 +37,9 @@ gulp.task('css', gulp.series('sass', function(){
     return gulp.src(['src/**/*.css','build/css/*.css'])
 	.pipe(concat('woodlands.css'))
 	.pipe(gulp.dest('build'))
-        .pipe(rename('woodlands.min.css'))
+    .pipe(rename('woodlands.min.css'))
 	.pipe(cssnano())
-        .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'));
 }));
 
 // Concatenate & Minify JS
@@ -75,7 +75,7 @@ gulp.task('tag-js', gulp.series('js', function() {
 }));
 
 gulp.task('header', gulp.series('tag-css','tag-js', function() {
-    return gulp.src('build/tag/*.tag')
+    return gulp.src(['src/external-scripts.txt','build/tag/*.tag'])
 	.pipe(concat('Additional_Header_Content.txt'))
 	.pipe(gulp.dest('dist'));
 

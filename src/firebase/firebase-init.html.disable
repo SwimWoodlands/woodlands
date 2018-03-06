@@ -1,0 +1,13 @@
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBfC67WMRxt1lNSvzgAYXQpKDyv2UDJL6E",
+    authDomain: "woodlands-cabana-club.firebaseapp.com",
+    databaseURL: "https://woodlands-cabana-club.firebaseio.com",
+    projectId: "woodlands-cabana-club",
+    storageBucket: "woodlands-cabana-club.appspot.com",
+    messagingSenderId: "1014133697971"
+  };
+  firebase.initializeApp(config);
+</script>
